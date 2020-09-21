@@ -27,7 +27,6 @@ def taker(requests):
         for i in a:
             if i not in puncmarks:
                 val = val + i
-        print(val)
         a = val
     # for new line removal
     if linetick == 'on':
@@ -60,6 +59,5 @@ def taker(requests):
         for i in a:
             val += 1
         a += 'total Characters are - ' + str(val)
-
     dict = {'result': val}
     return render(requests, 'result.html', dict)
